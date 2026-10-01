@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Transition</title>
+   <style>
+    *{
+        margin:0px;
+        padding:0px;
+    box-sizing: border-box;
+}
+.box{
+    height:100px;
+    width:150px;
+    margin:50px;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function:linear;
+}
+#box1:hover{
+ transform: rotate(360deg);
+}
+#box1{
+    background-color: aquamarine;
+}
+
+#box2:hover{
+    transform: scale(1.5,1); /*use for small:0.5 yaa 0.3 like ratio
+    use for width is 1.5 and height is 2 :(1.5,2))*/
+}
+#box2{
+    background-color: blue;
+}
+#box3:hover{
+    transform: skew(10deg,10deg);
+}
+#box3{
+   background-color: brown;
+}
+#box4:hover{
+   
+    transform: translate(50px,50px);
+}
+#box4{
+    background-color: burlywood;
+}
+   </style>
+</head>
+<body>
+    <div class="box" id="box1">
+        Transform rotate
+    </div>
+    <div class="box" id="box2">
+        Transform Scale
+    </div>
+    <div class="box" id="box3">
+        Transform Skew
+    </div>
+    <div class="box" id="box4">
+        Transform translte
+    </div>
+</body>
+</html>

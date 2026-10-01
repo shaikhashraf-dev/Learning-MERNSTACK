@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Easy Grid Layout</title>
+<style>
+    .container{
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+.item1 {
+grid-row: 1 / 2;
+grid-column: 1 / 2;
+}
+.item2 {
+grid-row: 1 / 2;
+grid-column: 2 / 3;
+}
+.item3 {
+grid-row: 2 / 3;
+grid-column: 1 / 2;
+}
+.item4 {
+grid-row: 2 / 3;
+grid-column: 2 / 3;
+}
+ .item1:hover{
+    background-color: brown;
+ }
+ .item2:hover{
+    background-color: blueviolet;
+ }
+ .item3:hover{
+    background-color: blanchedalmond;
+ }
+ .item4:hover{
+    background-color: rgb(26, 203, 91);
+ }
+
+.item{
+   height: 100px;
+    background-color: aqua;
+    font-size: 20px;
+    margin: 5px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid black;
+   transition: background-color 1s ease-in-out;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="item item1">Item 1</div>
+<div class="item item2">Item 2</div>
+<div class="item item3">Item 3</div>
+<div class="item item4">Item 4</div>
+</div>
+</body>
+</html

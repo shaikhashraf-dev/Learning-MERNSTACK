@@ -1,0 +1,32 @@
+* {
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+.box {
+    text-align: center;
+    border: 2px solid black;
+    border-radius:12px;
+}
+
+#first_box {
+    background-color: rgb(17, 176, 102);
+    height:100px;
+    width: 110px;
+    font-size: 20px;
+    margin: 15px ;
+    padding: 5px;
+    position: relative;
+     z-index: -1;
+}
+#second_box {
+    background-color: aqua;
+    height:95px;
+    width: 100px;
+    font-size: 20px;
+    margin: 15px ;
+    padding: 5px;
+  position: absolute;
+  top: 2px;
+  z-index: -1;
+}

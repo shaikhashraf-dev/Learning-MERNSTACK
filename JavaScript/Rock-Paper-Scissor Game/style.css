@@ -1,0 +1,30 @@
+.btn{
+    margin: 5px;
+    padding: 5px 10px;
+    font-size:15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color:#4bae4e;
+    color:#ffffff ;
+    cursor: pointer;
+}
+.btn1{
+    
+    margin: 5px;
+    padding: 5px 10px;
+    font-size:15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color:#eb0832;
+    color:#ffffff ;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(112, 187, 112);
+    color: #0d120d;
+}
+.btn1:hover{
+    background-color: rgb(241, 19, 219);
+    color: #0d120d;
+    transition: all ease-in-out;
+}

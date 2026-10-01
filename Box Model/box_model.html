@@ -1,0 +1,50 @@
+<!-- Create a div with height and width 
+200px and observe different values 
+in the box model by inspecting.
+- Create a button and give 10px 
+padding to top and bottom and 15px 
+on the sides.
+- Add 100px margin to the button on 
+all sides
+.- Add dotter border with color red 
+and so much that the button becomes 
+a circle.
+- Create two boxes with different 
+box-sizing values and observe 
+changes in box model -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Excersize</title>
+    <style>
+       #my_div {
+    background-color: chartreuse;
+    width: 200px;
+    height: 200px;
+    padding: 40px 20px 30px 40px;
+    margin: 10px;
+  border-radius: 23px 4px 90px 45px;
+    border-style: double;
+    font-size: 23px;
+    box-sizing:border-box;
+}
+ #my_button {
+     padding-top:10px;
+     padding-bottom:15px;
+     margin: 100px;
+     border: 2px dotted rgb(245, 19, 19);
+     background-color: aquamarine;
+     border-radius:22px;
+  
+ }
+    </style>
+</head>
+<body>
+<div id="my_div">Box</div>
+<button id="my_button">Click Me</button>
+    
+</body>
+</html>

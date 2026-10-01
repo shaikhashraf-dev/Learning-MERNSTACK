@@ -1,0 +1,24 @@
+
+ 
+ header {
+    color: rgb(123, 123, 198);
+    background-color: brown;
+}
+#sect1 {
+    background-color: aqua;
+}
+#sect2 {
+    background-color: blueviolet;
+}
+
+p {
+
+    background-color: burlywood;
+}
+nav {
+    background-color: rgb(63, 14, 109);
+}
+#word1 {
+   color: rgb(18, 180, 18);
+   background-color: bisque;
+}

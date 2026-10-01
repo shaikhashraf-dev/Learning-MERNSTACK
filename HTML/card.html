@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive card</title>
+</head>
+<style>
+    .card{
+        width: 200px;
+        height:300px;
+        perspective: 1000px;
+        position: relative;
+       
+    }
+    .card-front , .card-back{
+        height: 100%;
+        width:100%;
+      position: absolute;
+      backface-visibility: hidden;
+    }
+    .card-front{
+        background-color: #bf2222;
+        color: #000;
+    }
+    .card-back {
+        background-color: rgb(19, 102, 175);
+        color: #000;
+        
+    }
+
+    .card{
+        transition: transform 0.5s ease-in-out;
+    }
+    .card:hover{
+        transform:rotateY(90deg) ;
+    }
+
+</style>
+<body>
+<div class="card">
+<div class="card-front">
+    <h2>Front Side</h2>
+</div>
+<div class="card-back">
+    <h2>Back Side</h2>
+</div>
+</div>
+</body>
+</html>

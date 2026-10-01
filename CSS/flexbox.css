@@ -1,0 +1,29 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+
+#contain {
+    
+    border:2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+   flex-wrap: wrap;
+    max-width: 560px;
+}
+
+.box {
+ background-color: aquamarine;
+ height: 35px;
+ width:35px;
+ font-size: 20px;
+ margin: 10px;
+ padding: 10px;
+ text-align: center;
+ border:3px solid black;
+ border-radius: 3px;
+}
+#box2 {
+   
+}

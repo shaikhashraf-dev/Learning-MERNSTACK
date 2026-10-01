@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Counter</title>
+
+  <style>
+
+    body{
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    button{
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <button id="btn">Click Me</button>
+
+  <h2 id="count"></h2>
+
+  <script>
+
+    let button = document.getElementById("btn");
+
+    let counting = document.getElementById("count");
+
+    let pressCount = localStorage.getItem("count");
+
+    if(pressCount == null){
+      pressCount = 0;
+    }
+
+    showCount();
+
+    button.addEventListener("click", function(){
+
+      pressCount++;
+
+      localStorage.setItem("count", pressCount);
+
+      showCount();
+
+    });
+
+    function showCount(){
+
+      counting.innerText = "Button Pressed " + pressCount + " Times";
+
+      if(pressCount % 2 == 0){
+
+        button.style.backgroundColor = "green";
+
+      }else{
+
+        button.style.backgroundColor = "orange";
+
+      }
+
+    }
+
+  </script>
+
+</body>
+</html>
